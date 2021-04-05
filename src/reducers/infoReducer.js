@@ -10,14 +10,14 @@ const initialState = {
 export default function(state = initialState, action){
 
     switch (action.type) {
-        case 'SUBMIT_INFO':
+        case SUBMIT_INFO:
           return {
             ...state,
             memberInfo : {
             name : action.name,
             email : action.email}
           } 
-        case 'CREATE_ROOM':
+        case CREATE_ROOM:
           return 
         default:
           return state
